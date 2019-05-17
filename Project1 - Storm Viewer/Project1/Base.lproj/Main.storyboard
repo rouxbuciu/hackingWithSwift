@@ -56,18 +56,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BH2-4m-7Jo">
-                                <rect key="frame" x="-2" y="225" width="353" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BH2-4m-7Jo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BH2-4m-7Jo" firstAttribute="top" secondItem="suC-Qu-umF" secondAttribute="top" id="Au6-kB-7uo"/>
+                            <constraint firstItem="BH2-4m-7Jo" firstAttribute="leading" secondItem="6CB-Y4-dEa" secondAttribute="leading" id="TGh-lv-HRP"/>
+                            <constraint firstItem="BH2-4m-7Jo" firstAttribute="trailing" secondItem="6CB-Y4-dEa" secondAttribute="trailing" id="aYh-Iu-wrw"/>
+                            <constraint firstItem="BH2-4m-7Jo" firstAttribute="bottom" secondItem="6CB-Y4-dEa" secondAttribute="bottom" id="hM2-ca-3F4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6CB-Y4-dEa"/>
                     </view>
+                    <connections>
+                        <outlet property="imageVIew" destination="BH2-4m-7Jo" id="hOl-mq-7n8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTt-dC-Eqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5999999999999" y="165.96701649175412"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="165.06746626686657"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iff-Qv-6fM">
