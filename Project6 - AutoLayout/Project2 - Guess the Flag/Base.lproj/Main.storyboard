@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pXt-nx-dbv">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2___Guess_the_Flag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fao-Gs-ssR">
+                                <rect key="frame" x="107" y="124" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fao-Gs-ssR" secondAttribute="height" multiplier="2:1" id="E2s-5h-b68"/>
+                                    <constraint firstAttribute="height" constant="100" id="HCz-Eo-nje"/>
+                                    <constraint firstAttribute="width" constant="200" id="nRh-Rg-scA"/>
+                                </constraints>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yc1-Uf-8L0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUZ-DG-GHI">
+                                <rect key="frame" x="107" y="384" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6dn-WD-yQG"/>
+                                    <constraint firstAttribute="height" constant="100" id="Hb0-Ks-u7N"/>
+                                </constraints>
+                                <state key="normal" image="uk"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMF-Qv-dHX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAy-7t-xrw">
+                                <rect key="frame" x="107" y="254" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="oRJ-PH-cQf"/>
+                                    <constraint firstAttribute="height" constant="100" id="y1h-bd-WIU"/>
+                                </constraints>
+                                <state key="normal" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epK-wL-TkU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gUZ-DG-GHI" secondAttribute="bottom" constant="20" id="03A-gO-UB6"/>
+                            <constraint firstItem="uAy-7t-xrw" firstAttribute="height" secondItem="gUZ-DG-GHI" secondAttribute="height" id="Kn3-v3-S40"/>
+                            <constraint firstItem="uAy-7t-xrw" firstAttribute="top" secondItem="fao-Gs-ssR" secondAttribute="bottom" constant="30" id="O2G-3D-nPG"/>
+                            <constraint firstItem="fao-Gs-ssR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UKp-GJ-YC6"/>
+                            <constraint firstItem="uAy-7t-xrw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WHR-nf-zg3"/>
+                            <constraint firstItem="uAy-7t-xrw" firstAttribute="height" secondItem="fao-Gs-ssR" secondAttribute="height" id="Z9J-4O-wMM"/>
+                            <constraint firstItem="gUZ-DG-GHI" firstAttribute="top" secondItem="uAy-7t-xrw" secondAttribute="bottom" constant="30" id="ZRT-4x-OLZ"/>
+                            <constraint firstItem="fao-Gs-ssR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="rUL-Qe-HLu"/>
+                            <constraint firstItem="gUZ-DG-GHI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sfn-Mx-6gv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eRz-jr-xU3"/>
+                    <connections>
+                        <outlet property="button1" destination="fao-Gs-ssR" id="cWb-z3-klH"/>
+                        <outlet property="button2" destination="uAy-7t-xrw" id="mP2-5b-Qol"/>
+                        <outlet property="button3" destination="gUZ-DG-GHI" id="PWR-bi-bdJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A9R-pG-Uhp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pXt-nx-dbv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ahq-vj-yuy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Yic-WP-F9f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhF-tR-kfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="germany" width="200" height="100"/>
+        <image name="uk" width="200" height="100"/>
+        <image name="us" width="200" height="100"/>
+    </resources>
+</document>
