@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67334ACD22A8425400E2FB1D /* Magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 67334ACB22A8425400E2FB1D /* Magic.sks */; };
+		67334ACE22A8425400E2FB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67334ACC22A8425400E2FB1D /* Assets.xcassets */; };
 		6788FF2622A1628700AF05B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788FF2522A1628700AF05B5 /* AppDelegate.swift */; };
 		6788FF2822A1628700AF05B5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6788FF2722A1628700AF05B5 /* GameScene.sks */; };
 		6788FF2C22A1628800AF05B5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788FF2B22A1628800AF05B5 /* GameScene.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67334ACB22A8425400E2FB1D /* Magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Magic.sks; sourceTree = "<group>"; };
+		67334ACC22A8425400E2FB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6788FF2222A1628700AF05B5 /* Project 11 - Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 11 - Pachinko.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6788FF2522A1628700AF05B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6788FF2722A1628700AF05B5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				6788FF3E22A1723C00AF05B5 /* FireParticles.sks */,
+				67334ACB22A8425400E2FB1D /* Magic.sks */,
+				67334ACC22A8425400E2FB1D /* Assets.xcassets */,
 				6788FF3F22A1723C00AF05B5 /* ballBlue@2x.png */,
 				6788FF4022A1723C00AF05B5 /* slotGlowBad@2x.png */,
 				6788FF4122A1723C00AF05B5 /* ballYellow@2x.png */,
@@ -185,6 +191,7 @@
 				6788FF5822A1723C00AF05B5 /* ballRed@2x.png in Resources */,
 				6788FF5222A1723C00AF05B5 /* ballPurple@2x.png in Resources */,
 				6788FF5322A1723C00AF05B5 /* slotBaseBad@2x.png in Resources */,
+				67334ACE22A8425400E2FB1D /* Assets.xcassets in Resources */,
 				6788FF5122A1723C00AF05B5 /* slotBaseGood@2x.png in Resources */,
 				6788FF2822A1628700AF05B5 /* GameScene.sks in Resources */,
 				6788FF5722A1723C00AF05B5 /* slotGlowGood@2x.png in Resources */,
@@ -198,6 +205,7 @@
 				6788FF5922A1723C00AF05B5 /* ballCyan@2x.png in Resources */,
 				6788FF5622A1723C00AF05B5 /* bouncer@2x.png in Resources */,
 				6788FF5422A1723C00AF05B5 /* ballGrey@2x.png in Resources */,
+				67334ACD22A8425400E2FB1D /* Magic.sks in Resources */,
 				6788FF5A22A1723C00AF05B5 /* background@2x.jpg in Resources */,
 				6788FF4F22A1723C00AF05B5 /* slotGlowBad@2x.png in Resources */,
 			);
