@@ -16,6 +16,17 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))
+        
+        let defaults = UserDefaults.standard
+        if let savedPeople = defaults.object(forKey: "people") as? Data {
+            let jsonDecoder = JSONDecoder()
+            
+            do {
+                people = try jsonDecoder.decode([Person].self, from: savedPeople)
+            } catch {
+                print("Failed to load people.")
+            }
+        }
     }
     
     @objc func addNewPerson() {
@@ -58,6 +69,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             selectedPerson.name = newName.text!
             
             self.collectionView?.reloadData()
+            self.save()
         }))
         
         present(ac, animated: true)
@@ -78,11 +90,22 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         people.append(person)
         collectionView?.reloadData()
         dismiss(animated: true, completion: nil)
+        save()
     }
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
+    }
+    
+    func save() {
+        let jsonEncoder = JSONEncoder()
+        if let savedData = try? jsonEncoder.encode(people) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "people")
+        } else {
+            print("Failed to save people.")
+        }
     }
 
 }
